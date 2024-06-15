@@ -1,0 +1,33 @@
+.hamburger_menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hamburger_menu {
+    display: block;
+  }
+
+  .hamburger_menu_open {
+    transition: 0.5s;
+  }
+
+  .hamburger_menu_open:nth-child(1) {
+    transform: translateY(0.6rem) rotate(150deg);
+  }
+
+  .hamburger_menu_open:nth-child(2) {
+    transform: translateY(-0.6rem) rotate(-150deg);
+  }
+
+  .hamburger_menu_line {
+    background-color: var(--main-color);
+    display: block;
+    height: 0.2rem;
+    width: 3rem;
+    margin-top: 1rem;
+  }
+
+  .hamburger_menu_line:first-child {
+    margin-top: 0;
+  }
+}

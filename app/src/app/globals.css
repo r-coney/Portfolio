@@ -1,33 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.cdnfonts.com/css/post-no-bills-colombo");
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --main-color: #088db7;
+  --sub-font: "Post No Bills Colombo ExtraBold", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  font-size: 62.5%; /* remで指定しやすいよう10pxに指定 */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
+  color: var(--main-color);
+  font-size: 1.4rem;
+  padding: 2rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+  text-decoration: none;
+  color: var(--main-color);
 }
