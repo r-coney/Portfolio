@@ -2,7 +2,7 @@
 
 :root {
   --main-color: #088db7;
-  --sub-font: "Post No Bills Colombo ExtraBold", sans-serif;
+  --main-font: "Post No Bills Colombo ExtraBold", sans-serif;
 }
 
 html {
@@ -23,4 +23,9 @@ a {
 
 .section_container {
   height: 100vh;
+}
+
+.section_title {
+  font-size: 7rem;
+  font-family: var(--main-font);
 }

@@ -7,7 +7,7 @@
 
 .title {
   display: inline-block;
-  font-family: var(--sub-font);
+  font-family: var(--main-font);
   font-size: 20rem;
   margin: 0;
 }
@@ -21,7 +21,7 @@
 
 .text {
   font-size: 3rem;
-  font-family: var(--sub-font);
+  font-family: var(--main-font);
   display: inline-block;
 }
 
