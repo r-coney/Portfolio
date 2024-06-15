@@ -1,0 +1,46 @@
+.title_container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 25rem;
+}
+
+.title {
+  display: inline-block;
+  font-family: var(--sub-font);
+  font-size: 20rem;
+  margin: 0;
+}
+
+.text_container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  overflow-wrap: anywhere;
+}
+
+.text {
+  font-size: 3rem;
+  font-family: var(--sub-font);
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .title_container {
+    justify-content: center;
+    margin-top: 7rem;
+  }
+
+  .title {
+    font-size: 9rem;
+  }
+
+  .text_container {
+    margin-top: 7rem;
+    width: 60%;
+  }
+
+  .text {
+    font-size: 2.5rem;
+  }
+}

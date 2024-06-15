@@ -13,10 +13,14 @@ body {
   background: white;
   color: var(--main-color);
   font-size: 1.4rem;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 a {
   text-decoration: none;
   color: var(--main-color);
+}
+
+.section_container {
+  height: 100vh;
 }

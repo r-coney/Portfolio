@@ -1,8 +1,9 @@
-import Image from "next/image";
-import Top from "@/components/top/Top";
+import Top from "@/components/Top/Top";
 
 export default function Home() {
   return (
+  <div className="section-container">
     <Top />
+  </div>
   );
 }
