@@ -1,0 +1,39 @@
+.skill_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.skill_container {
+  width: calc(100% / 4 - 0.5rem);
+  overflow-wrap: anywhere;
+  padding: 1rem;
+  margin-top: 2rem;
+  height: 25rem;
+
+}
+
+.skill_name {
+    font-family: var(--main-font);
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.skill_description {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .skill_list {
+    flex-flow: column;
+  }
+
+  .skill_container {
+    width: 100%;
+    border-bottom: solid 0.2rem var(--main-color);
+    margin-top: 1rem;
+  }
+}

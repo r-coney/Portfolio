@@ -4,10 +4,10 @@ import Skills from "@/components/Top/Skills";
 export default function Home() {
   return (
     <>
-      <div className="section-container">
+      <div className="section_container">
         <Top />
       </div>
-      <div>
+      <div className="section_container">
         <Skills />
       </div>
     </>

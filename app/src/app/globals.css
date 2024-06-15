@@ -29,3 +29,22 @@ a {
   font-size: 7rem;
   font-family: var(--main-font);
 }
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .section_title {
+    text-align: center;
+    font-size: 5rem;
+  }
+}
