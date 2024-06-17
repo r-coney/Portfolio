@@ -1,0 +1,60 @@
+.works_container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 65%;
+}
+
+.decolation {
+  width: calc(100% / 2 - 5rem);
+  height: 100%;
+  background-color: var(--main-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.triangle_top {
+  --b:1rem; /* control the border thickness */
+
+  width: 100%;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0,100% 0,0 100%,0 0,var(--b) var(--b),var(--b) calc(100% - var(--b)/tan(22.5deg)),calc(100% - var(--b)/tan(22.5deg)) var(--b),var(--b) var(--b));
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.triangle_under {
+  --b: 1rem; /* control the border thickness */
+
+  width: 100%;
+  aspect-ratio: 1;
+  clip-path: polygon(100% 100%,100% 0,0 100%,100% 100%,calc(100% - var(--b)) calc(100% - var(--b)),calc(var(--b)/tan(22.5deg)) calc(100% - var(--b)),calc(100% - var(--b)) calc(var(--b)/tan(22.5deg)),calc(100% - var(--b)) calc(100% - var(--b)));
+  background: white;
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.work_list {
+  width: calc(100% / 2 - 5rem);
+  list-style: none;
+  font-size: 2rem;
+}
+
+.works_list_item {
+  border-bottom: solid 0.2rem var(--main-color);
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .work_list {
+    width: 100%;
+  }
+
+  .decolation{
+    display: none;
+  }
+}

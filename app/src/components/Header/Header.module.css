@@ -40,6 +40,7 @@
     flex-flow: column;
     align-items: first baseline;
     position: sticky;
+    top: 1.5rem;
   }
 
   .menu {

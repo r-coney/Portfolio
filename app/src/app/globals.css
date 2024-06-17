@@ -13,7 +13,7 @@ body {
   background: white;
   color: var(--main-color);
   font-size: 1.4rem;
-  padding: 3rem;
+  padding: 3rem 5rem;
 }
 
 a {
@@ -30,6 +30,10 @@ a {
   font-family: var(--main-font);
 }
 
+.section_title_end {
+  text-align: end;
+}
+
 h1 {
   margin: 0;
 }
@@ -43,6 +47,11 @@ p {
 }
 
 @media (max-width: 600px) {
+  .section_container {
+    height: 100%;
+    margin-top: 15rem;
+  }
+
   .section_title {
     text-align: center;
     font-size: 5rem;
