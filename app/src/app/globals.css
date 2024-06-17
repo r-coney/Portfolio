@@ -46,6 +46,13 @@ p {
   margin: 0;
 }
 
+.container_with_decoration {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 65%;
+}
+
 @media (max-width: 600px) {
   .section_container {
     height: 100%;

@@ -1,4 +1,5 @@
 import React from "react";
+import Decoration from "../Decoration/Decoration";
 import styles from "./Works.module.css";
 
 type Work = {
@@ -18,11 +19,8 @@ const Works = async () => {
   return (
     <>
       <h2 className="section_title section_title_end">Works</h2>
-      <div className={styles.works_container}>
-        <div className={styles.decolation}>
-          <div className={styles.triangle_top}></div>
-          <div className={styles.triangle_under}></div>
-        </div>
+      <div className="container_with_decoration">
+        <Decoration />
         <ul className={styles.work_list}>
           {works.map((work) => {
             return (
