@@ -1,0 +1,37 @@
+.profile_container {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
+.description {
+  width: 50%;
+}
+
+.description_text {
+  margin-top: 2rem;
+}
+
+.profile_image {
+  margin-left: 3rem;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 600px) {
+  .profile_container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .description {
+    width: 70%;
+  }
+
+  .profile_image {
+    width: 10rem;
+    height: 10rem;
+  }
+}
