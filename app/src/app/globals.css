@@ -34,18 +34,6 @@ a {
   text-align: end;
 }
 
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
 .container_with_decoration {
   display: flex;
   align-items: flex-end;
@@ -54,9 +42,14 @@ p {
 }
 
 @media (max-width: 600px) {
+  .body {
+    padding: 3rem 3.5rem;
+  }
+
   .section_container {
     height: 100%;
-    margin-top: 15rem;
+    padding-bottom: 15rem;
+    box-sizing: border-box;
   }
 
   .section_title {

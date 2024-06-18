@@ -1,0 +1,42 @@
+.contact_list {
+  width: 50%;
+  list-style: none;
+  margin: auto 0;
+
+}
+
+.contact_list_item {
+  font-family: var(--main-font);
+  font-size: 4rem;
+  text-align: center;
+  width: 70%;
+  border: solid 0.2rem var(--main-color);
+  box-sizing: border-box;
+  margin: 4rem auto 0;
+}
+
+.contact_list_item:first-child {
+  margin-top: 0;
+}
+
+.contact_list_link {
+  display: block;
+  padding: 0.5rem;
+  transition: 0.5s;
+}
+
+.contact_list_link:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+@media (max-width: 600px) {
+  .contact_list {
+    width: 100%;
+  }
+
+  .contact_list_item {
+    width: 100%;
+  }
+}
+
