@@ -30,6 +30,11 @@
   margin-left: 0;
 }
 
+.list_item_link {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   .hamburger_menu_container {
     display: flex;

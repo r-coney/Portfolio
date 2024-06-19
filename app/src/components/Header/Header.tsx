@@ -1,9 +1,9 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import styles from "./Header.module.css";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
+import { Link as Scroll } from "react-scroll";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -24,22 +24,59 @@ const Header = () => {
       >
         <ul className={styles.list}>
           <li className={styles.list_item}>
-            <Link href="#">Top</Link>
+            <Scroll
+              to={"top"}
+              smooth={true}
+              offset={-50}
+              className={styles.list_item_link}
+              onClick={handleMenuClick}
+            >
+              Top
+            </Scroll>
           </li>
           <li className={styles.list_item}>
-            <Link href="#">Skills</Link>
+            <Scroll
+              to={"skills"}
+              smooth={true}
+              offset={-50}
+              className={styles.list_item_link}
+              onClick={handleMenuClick}
+            >
+              Skills
+            </Scroll>
           </li>
           <li className={styles.list_item}>
-            <Link href="#">Works</Link>
+            <Scroll
+              to={"works"}
+              smooth={true}
+              offset={-50}
+              className={styles.list_item_link}
+              onClick={handleMenuClick}
+            >
+              Works
+            </Scroll>
           </li>
           <li className={styles.list_item}>
-            <Link href="#">Profile</Link>
+            <Scroll
+              to={"profile"}
+              smooth={true}
+              offset={-50}
+              className={styles.list_item_link}
+              onClick={handleMenuClick}
+            >
+              Profile
+            </Scroll>
           </li>
           <li className={styles.list_item}>
-            <Link href="#">Contact</Link>
-          </li>
-          <li className={styles.list_item}>
-            <Link href="#">Blog</Link>
+            <Scroll
+              to={"contact"}
+              smooth={true}
+              offset={-50}
+              className={styles.list_item_link}
+              onClick={handleMenuClick}
+            >
+              Contact
+            </Scroll>
           </li>
         </ul>
       </nav>

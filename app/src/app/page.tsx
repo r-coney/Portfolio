@@ -7,19 +7,19 @@ import Contact from "@/components/Contact/Contact";
 export default function Home() {
   return (
     <>
-      <div className="section_container">
+      <div className="section_container" id="top">
         <Top />
       </div>
-      <div className="section_container">
+      <div className="section_container" id="skills">
         <Skills />
       </div>
-      <div className="section_container">
+      <div className="section_container" id="works">
         <Works />
       </div>
-      <div className="section_container">
+      <div className="section_container" id="profile">
         <Profile />
       </div>
-      <div className="section_container">
+      <div className="section_container" id="contact">
         <Contact />
       </div>
     </>
