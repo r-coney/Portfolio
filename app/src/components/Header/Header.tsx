@@ -3,9 +3,36 @@ import React from "react";
 import styles from "./Header.module.css";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
-import { Link as Scroll } from "react-scroll";
+import MenuListItem from "./MenuListItem/MenuListItem";
+
+type MenuListItem = {
+  text: string;
+  scrollTo: string;
+};
 
 const Header = () => {
+  const menuListItems: MenuListItem[] = [
+    {
+      text: "Top",
+      scrollTo: "top",
+    },
+    {
+      text: "Skils",
+      scrollTo: "skills",
+    },
+    {
+      text: "Works",
+      scrollTo: "works",
+    },
+    {
+      text: "Profile",
+      scrollTo: "profile",
+    },
+    {
+      text: "Contact",
+      scrollTo: "contact",
+    },
+  ];
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const handleMenuClick = () => setMenuOpen(!menuOpen);
 
@@ -23,61 +50,16 @@ const Header = () => {
         }`}
       >
         <ul className={styles.list}>
-          <li className={styles.list_item}>
-            <Scroll
-              to={"top"}
-              smooth={true}
-              offset={-50}
-              className={styles.list_item_link}
-              onClick={handleMenuClick}
-            >
-              Top
-            </Scroll>
-          </li>
-          <li className={styles.list_item}>
-            <Scroll
-              to={"skills"}
-              smooth={true}
-              offset={-50}
-              className={styles.list_item_link}
-              onClick={handleMenuClick}
-            >
-              Skills
-            </Scroll>
-          </li>
-          <li className={styles.list_item}>
-            <Scroll
-              to={"works"}
-              smooth={true}
-              offset={-50}
-              className={styles.list_item_link}
-              onClick={handleMenuClick}
-            >
-              Works
-            </Scroll>
-          </li>
-          <li className={styles.list_item}>
-            <Scroll
-              to={"profile"}
-              smooth={true}
-              offset={-50}
-              className={styles.list_item_link}
-              onClick={handleMenuClick}
-            >
-              Profile
-            </Scroll>
-          </li>
-          <li className={styles.list_item}>
-            <Scroll
-              to={"contact"}
-              smooth={true}
-              offset={-50}
-              className={styles.list_item_link}
-              onClick={handleMenuClick}
-            >
-              Contact
-            </Scroll>
-          </li>
+          {menuListItems.map((menuListItem) => {
+            return (
+              <MenuListItem
+                key={menuListItem.text}
+                text={menuListItem.text}
+                scrollTo={menuListItem.scrollTo}
+                handleClick={handleMenuClick}
+              />
+            );
+          })}
         </ul>
       </nav>
     </header>

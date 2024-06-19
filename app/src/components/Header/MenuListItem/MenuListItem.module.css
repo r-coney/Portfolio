@@ -1,0 +1,25 @@
+.list_item {
+  margin-left: 35px;
+  font-family: var(--main-font);
+  font-size: 2rem;
+}
+
+.list_item:first-child {
+  margin-left: 0;
+}
+
+.list_item_link {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .list_item {
+    font-size: 3rem;
+    margin: 2.5rem 0 0 0;
+  }
+
+  .list_item:first-child {
+    margin-top: 0;
+  }
+}
