@@ -6,22 +6,21 @@ import styles from "./Contact.module.css";
 const Contact = () => {
   return (
     <>
-      <h2 className="section_title section_title_end">Contact</h2>
-      <div className="container_with_decoration">
-        <Decoration />
-        <ul className={styles.contact_list}>
-          <li className={styles.contact_list_item}>
-            <Link className={styles.contact_list_link} href="hoge">
-              Mail
-            </Link>
-          </li>
-          <li className={styles.contact_list_item}>
-            <Link className={styles.contact_list_link} href="hoge">
-              X
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <h2 className="section_title section_title_end" id="contact">
+        Contact
+      </h2>
+      <ul className={styles.contact_list}>
+        <li className={styles.contact_list_item}>
+          <Link className={styles.contact_list_link} href="hoge">
+            Mail
+          </Link>
+        </li>
+        <li className={styles.contact_list_item}>
+          <Link className={styles.contact_list_link} href="hoge">
+            X
+          </Link>
+        </li>
+      </ul>
     </>
   );
 };

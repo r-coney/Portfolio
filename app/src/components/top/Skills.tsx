@@ -15,7 +15,9 @@ const Skills = async () => {
 
   return (
     <>
-      <h2 className="section_title">Skills</h2>
+      <h2 className="section_title" id="skills">
+        Skills
+      </h2>
       <ul className={styles.skill_list}>
         {skills.map((skill, index) => {
           return (

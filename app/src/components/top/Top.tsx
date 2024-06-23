@@ -5,7 +5,9 @@ const Top = () => {
   return (
     <>
       <div className={styles.title_container}>
-        <h1 className={styles.title}>Portfolio</h1>
+        <h1 className={styles.title} id="top">
+          Portfolio
+        </h1>
       </div>
       <div className={styles.text_container}>
         <p className={styles.text}>

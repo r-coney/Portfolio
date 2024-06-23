@@ -18,21 +18,22 @@ const Profile = async () => {
 
   return (
     <>
-      <h2 className="section_title section_title_end">Profile</h2>
-      <div className="container_with_decoration">
-        <Decoration />
-        <div className={styles.profile_container}>
-          <div className={styles.description}>
-            <h3>{`${user.last_name} ${user.first_name}`}</h3>
-            <p>{user.role}</p>
-            <p className={styles.description_text}>{user.profile}</p>
-          </div>
+      <h2 className="section_title section_title_end" id="profile">
+        Profile
+      </h2>
+      <div className={styles.profile_container}>
+        <div className={styles.description}>
+          <h3>{`${user.last_name} ${user.first_name}`}</h3>
+          <p>{user.role}</p>
+          <p className={styles.description_text}>{user.profile}</p>
+        </div>
+        <div className={styles.image_container}>
           <Image
             className={styles.profile_image}
             src={profileImage}
             alt="hoge"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
         </div>
       </div>

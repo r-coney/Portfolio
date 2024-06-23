@@ -3,24 +3,30 @@ import Skills from "@/components/Top/Skills";
 import Works from "@/components/Works/Works";
 import Profile from "@/components/Profile/Profile";
 import Contact from "@/components/Contact/Contact";
+import Decoration from "@/components/Decoration/Decoration";
 
 export default function Home() {
   return (
     <>
-      <div className="section_container" id="top">
+      <div className="section_container section_container_top">
         <Top />
       </div>
-      <div className="section_container" id="skills">
+      <div className="section_container">
         <Skills />
       </div>
-      <div className="section_container" id="works">
-        <Works />
-      </div>
-      <div className="section_container" id="profile">
-        <Profile />
-      </div>
-      <div className="section_container" id="contact">
-        <Contact />
+      <div className="container_to_split_screen">
+        <Decoration />
+        <div className="container_with_decoration">
+          <div className="section_container section_container_with_decoration">
+            <Works />
+          </div>
+          <div className="section_container section_container_with_decoration">
+            <Profile />
+          </div>
+          <div className="section_container section_container_with_decoration">
+            <Contact />
+          </div>
+        </div>
       </div>
     </>
   );

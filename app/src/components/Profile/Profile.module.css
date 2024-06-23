@@ -1,21 +1,20 @@
 .profile_container {
   display: flex;
-  width: 50%;
-  justify-content: end;
-  align-items: center;
-  height: 100%;
 }
 
 .description {
-  width: 50%;
+  width: 60%;
 }
 
 .description_text {
   margin-top: 2rem;
 }
 
+.image_container {
+  margin:15rem 0 0 3rem;
+}
+
 .profile_image {
-  margin-left: 3rem;
   border-radius: 50%;
 }
 

@@ -15,12 +15,12 @@ const Works = async () => {
     cache: "no-store",
   });
   const works: Work[] = await response.json();
-  console.log(works);
   return (
     <>
-      <h2 className="section_title section_title_end">Works</h2>
-      <div className="container_with_decoration">
-        <Decoration />
+      <h2 className="section_title section_title_end" id="works">
+        Works
+      </h2>
+      <div className="work_list_container">
         <ul className={styles.work_list}>
           {works.map((work) => {
             return (

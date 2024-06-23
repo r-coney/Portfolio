@@ -5,8 +5,13 @@
   height: 65%;
 }
 
+.work_list_container {
+  width: 100%;
+}
+
 .work_list {
-  width: calc(100% / 2 - 5rem);
+  width: 80%;
+  margin: 0 auto;
   list-style: none;
   font-size: 2rem;
 }

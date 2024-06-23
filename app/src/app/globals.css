@@ -25,6 +25,14 @@ a {
   height: 100vh;
 }
 
+.section_container_top {
+  padding-top: 25rem;
+}
+
+.section_container_with_decoration {
+  padding-top: 10rem;
+}
+
 .section_title {
   font-size: 7rem;
   font-family: var(--main-font);
@@ -32,14 +40,20 @@ a {
 
 .section_title_end {
   text-align: end;
+  margin-bottom: 5rem;
+}
+
+.container_to_split_screen {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 10rem;
 }
 
 .container_with_decoration {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  height: 65%;
+  padding: 0 3rem;
 }
+
 
 @media (max-width: 600px) {
   .body {
