@@ -29,7 +29,6 @@ a {
   padding-top: rem;
 }
 
-
 .section_container_with_decoration {
   padding-top: 10rem;
 }
@@ -91,5 +90,4 @@ a {
   .container_with_decoration {
     padding: 0;
   }
-
 }
