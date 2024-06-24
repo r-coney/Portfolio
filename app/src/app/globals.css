@@ -55,7 +55,7 @@ a {
 }
 
 @media (max-width: 600px) {
-  .body {
+  body {
     padding: 3rem 3.5rem;
   }
 
