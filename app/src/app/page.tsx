@@ -11,7 +11,7 @@ export default function Home() {
       <div className="section_container section_container_top">
         <Top />
       </div>
-      <div className="section_container">
+      <div className="section_container section_container_skills">
         <Skills />
       </div>
       <div className="container_to_split_screen">

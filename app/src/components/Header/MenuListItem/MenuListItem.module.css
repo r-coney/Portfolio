@@ -9,6 +9,11 @@
   margin-left: 0;
 }
 
+.list_item:hover {
+  border-bottom: solid 0.1rem var(--main-color);
+  transition: 0.2s;
+}
+
 .list_item_link {
   display: block;
   width: 100%;
