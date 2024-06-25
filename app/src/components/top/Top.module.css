@@ -16,12 +16,8 @@
   display: flex;
   justify-content: start;
   overflow-wrap: anywhere;
-}
-
-.text {
   font-size: 3rem;
   font-family: var(--main-font);
-  display: inline-block;
 }
 
 @media (max-width: 600px) {
@@ -35,11 +31,8 @@
   }
 
   .text_container {
-    margin-top: 7rem;
-    width: 60%;
-  }
-
-  .text {
+    margin-top: 15rem;
+    width: 80%;
     font-size: 2.5rem;
   }
 }
