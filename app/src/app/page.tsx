@@ -1,5 +1,5 @@
 import Top from "@/components/Top/Top";
-import Skills from "@/components/Top/Skills";
+import Skills from "@/components/Skills/Skills";
 import Works from "@/components/Works/Works";
 import Profile from "@/components/Profile/Profile";
 import Contact from "@/components/Contact/Contact";
