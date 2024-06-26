@@ -1,5 +1,7 @@
 .profile_container {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .description {
@@ -17,7 +19,6 @@
 .profile_image {
   border-radius: 50%;
 }
-
 
 @media (max-width: 600px) {
   .profile_container {
