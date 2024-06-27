@@ -33,5 +33,6 @@
     width: 100%;
     border-bottom: solid 0.2rem var(--main-color);
     margin-top: 1rem;
+    height: auto;
   }
 }
