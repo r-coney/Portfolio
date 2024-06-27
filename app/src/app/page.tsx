@@ -11,13 +11,13 @@ export default function Home() {
       <div className="section_container section_container_top">
         <Top />
       </div>
-      <div className="section_container section_container_skills">
+      <div className="section_container section_container_height_auto">
         <Skills />
       </div>
       <div className="container_to_split_screen">
         <Decoration />
         <div className="container_with_decoration">
-          <div className="section_container section_container_with_decoration">
+          <div className="section_container section_container_with_decoration section_container_height_auto">
             <Works />
           </div>
           <div className="section_container section_container_with_decoration">

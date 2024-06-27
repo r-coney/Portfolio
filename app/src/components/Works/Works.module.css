@@ -17,9 +17,20 @@
 }
 
 .works_list_item {
-  border-bottom: solid 0.2rem var(--main-color);
+  border-bottom: solid 0.1rem var(--main-color);
   padding: 1rem;
 }
+
+.work_title {
+  font-weight: 550;
+  line-height: 1.3;
+}
+
+.work_description {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
 
 @media (max-width: 600px) {
   .work_list {
