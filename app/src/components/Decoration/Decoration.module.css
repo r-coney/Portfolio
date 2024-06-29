@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'Hack Nerd Font';
-  src: url('../../fonts/Hack/HackNerdFont-Italic.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .decoration {
   width: 60%;
   background-size: cover;

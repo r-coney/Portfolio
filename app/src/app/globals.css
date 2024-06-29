@@ -1,4 +1,10 @@
 @import url("https://fonts.cdnfonts.com/css/post-no-bills-colombo");
+@font-face {
+  font-family: 'Hack Nerd Font';
+  src: url('/fonts/HackNerdFont-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --main-color: white;
@@ -10,7 +16,7 @@ html {
 }
 
 body {
-  /* background: white; */
+  font-family: 'Hack Nerd Font';
   background-image: url('/background_img_body.jpg');
   background-size: cover;
   background-attachment: fixed;
