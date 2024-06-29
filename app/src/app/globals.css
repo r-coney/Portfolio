@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/post-no-bills-colombo");
 @font-face {
   font-family: 'Hack Nerd Font';
-  src: url('/fonts/HackNerdFont-Italic.ttf') format('truetype');
+  src: url('/fonts/Hack/HackNerdFont-Italic.ttf');
   font-weight: normal;
   font-style: normal;
 }

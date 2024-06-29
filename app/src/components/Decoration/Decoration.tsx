@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Decoration.module.css";
-import { ReactTyped } from "../../../node_modules/react-typed/dist/mjs/index";
+import { ReactTyped } from "react-typed";
 
 const Decoration = () => {
   const codeString = `
@@ -29,41 +29,41 @@ Thanks for coming!
 You have completely understood programming!
   `;
 
-  const ref = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const [isAnimationVisible, setIsAnimationVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (ref.current) {
+      const top = ref.current.getBoundingClientRect().top;
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      if (top <= windowHeight * 0.8) {
+        // ビューポートの80%以上が表示された場合に発火する条件
+        setIsAnimationVisible(true);
+        window.removeEventListener("scroll", handleScroll);
+      }
+    }
+  };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <div className={styles.decoration}>
       <div className={styles.decoration_text_container} ref={ref}>
         <code className={styles.decoration_text}>
-        {isVisible && (
-           <ReactTyped
-            strings={[codeString]}
-            typeSpeed={40}
-            backSpeed={50}
-            loop={false}
-          />
-        )}
+          {isAnimationVisible && (
+            <ReactTyped
+              strings={[codeString]}
+              typeSpeed={40}
+              backSpeed={50}
+              loop={false}
+            />
+          )}
         </code>
       </div>
     </div>

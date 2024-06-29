@@ -1,7 +1,5 @@
 .decoration {
   width: 60%;
-  background-size: cover;
-  opacity: 0.9;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -15,7 +13,7 @@
 }
 
 .decoration_text {
-  font-family: Hack Nerd Font;
+  font-family: "Hack Nerd Font";
   font-size: 2rem;
   white-space: pre-wrap;
   color: white;
@@ -28,6 +26,25 @@
 
 @media (max-width: 600px) {
   .decoration {
-    display: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .decoration_text_container {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .decoration_text {
+    font-family: Hack Nerd Font;
+    font-size: 1.3rem;
+    white-space: pre-wrap;
+    color: white;
+    display: block;
+    border: solid 0.1rem white;
+    padding: 8rem 3rem;
+    width: 100%;
+    height: 95%;
   }
 }
