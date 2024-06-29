@@ -28,10 +28,10 @@ const Header = () => {
       text: "Profile",
       scrollTo: "profile",
     },
-    {
-      text: "Contact",
-      scrollTo: "contact",
-    },
+    // {
+    //   text: "Contact",
+    //   scrollTo: "contact",
+    // },
   ];
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const handleMenuClick = () => setMenuOpen(!menuOpen);
