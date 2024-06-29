@@ -1,6 +1,5 @@
 .profile_container {
   display: flex;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -9,7 +8,8 @@
 }
 
 .description_text {
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  margin-top: 5rem;
 }
 
 .image_container {
@@ -31,6 +31,10 @@
     width: 100%;
     order: 1;
     margin-top: 5rem;
+  }
+
+  .description_text {
+    margin-top: 2rem;
   }
 
   .profile_image {

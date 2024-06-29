@@ -23,7 +23,6 @@
 @media (max-width: 600px) {
   .title_container {
     justify-content: center;
-    margin-top: 7rem;
   }
 
   .title {

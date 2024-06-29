@@ -7,7 +7,7 @@ import Decoration from "@/components/Decoration/Decoration";
 
 export default function Home() {
   return (
-    <>
+    <div className="body_container">
       <div className="section_container section_container_top">
         <Top />
       </div>
@@ -20,14 +20,14 @@ export default function Home() {
           <div className="section_container section_container_with_decoration section_container_height_auto">
             <Works />
           </div>
-          <div className="section_container section_container_with_decoration">
+          <div className="section_container section_container_with_decoration section_container_height_auto">
             <Profile />
           </div>
-          <div className="section_container section_container_with_decoration">
+          {/*<div className="section_container section_container_with_decoration">
             <Contact />
-          </div>
+          </div>*/}
         </div>
       </div>
-    </>
+    </div>
   );
 }
