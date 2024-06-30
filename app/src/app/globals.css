@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/post-no-bills-colombo");
 @font-face {
-  font-family: 'Hack Nerd Font';
-  src: url('/fonts/Hack/HackNerdFont-Italic.ttf');
+  font-family: "Hack Nerd Font";
+  src: url("/fonts/Hack/HackNerdFont-Italic.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,13 +16,22 @@ html {
 }
 
 body {
-  font-family: 'Hack Nerd Font';
-  background-image: url('/background_img_body.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  font-family: "Hack Nerd Font";
   color: var(--main-color);
   font-size: 1.4rem;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url("/background_img_body.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .body_container {
@@ -86,8 +95,12 @@ a {
     margin-bottom: 3rem;
   }
 
-  .section_container_height_auto{
+  .section_container_height_auto {
     height: auto;
+  }
+
+  .section_container_top {
+    padding-top: 10rem;
   }
 
   .section_container_with_decoration {

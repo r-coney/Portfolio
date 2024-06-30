@@ -13,10 +13,10 @@ const PcDecoration = ({ childrenList }: PcDecorationProps) => {
     <>
       {!isMobile && <Decoration />}
       <div className="container_with_decoration">
-        {childrenList.map((children, index) => {
+        {childrenList.map((children) => {
           return (
             <div
-              key={index}
+              key={children.key}
               className="section_container section_container_with_decoration section_container_height_auto"
             >
               {children}

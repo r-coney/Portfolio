@@ -1,7 +1,5 @@
 import React from "react";
-import Decoration from "../Decoration/Decoration";
-import Image from "../../../node_modules/next/image";
-import profileImage from "../../../public/profile.jpeg";
+import Image from "next/image";
 import styles from "./Profile.module.css";
 
 type User = {
@@ -48,7 +46,7 @@ const Profile = async () => {
         <div className={styles.image_container}>
           <Image
             className={styles.profile_image}
-            src={profileImage}
+            src="/profile.jpg"
             alt="hoge"
             width={400}
             height={400}
